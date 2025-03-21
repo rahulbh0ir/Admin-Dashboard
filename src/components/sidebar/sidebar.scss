@@ -1,3 +1,7 @@
 .sidebar{
-  background-color: lightcoral;
+    .item{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
 }

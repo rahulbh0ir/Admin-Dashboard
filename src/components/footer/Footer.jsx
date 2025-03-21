@@ -3,7 +3,10 @@ import "./footer.scss"
 const Footer = () => {
   return (
     <>
-      <div className="footer">Footer</div>
+      <div className="footer">
+        <span>2025</span>
+        <span>©️ Rahul Bhoir </span>
+      </div>
     </>
   )
 }
