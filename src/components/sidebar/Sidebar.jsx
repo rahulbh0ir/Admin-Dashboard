@@ -1,33 +1,29 @@
-import { Link } from "react-router-dom"
-import "./sidebar.scss"
+import { Link } from "react-router-dom";
+import "./sidebar.scss";
+import {menu} from "../../data.js"
 
 const Sidebar = () => {
   return (
     <>
       <div className="sidebar">
 
-        <div className="item">
-          <span className="title">MAIN</span>
-          <Link to="/">
-            <img src="home.svg"  alt=""/>
-            <span className="listTitle">Homepage</span>
+        {menu.map(item =>  
+
+        <div className="item" key={item.id} >
+          <span className="title">{item.title}</span>
+
+          {item.listItems.map(itemlist => 
+
+          <Link to={itemlist.url} className="lists" key={itemlist.id}>
+            <img src={itemlist.icon}  alt=""/>
+            <span className="listTitle">{itemlist.title}</span>
           </Link>
-          <Link to="/">
-            <img src="profile.svg"  alt=""/>
-            <span className="listTitle">Profile</span>
-          </Link>
+            
+          )}
+          
         </div>
-        <div className="item">
-          <span className="title">MAIN</span>
-          <Link to="/">
-            <img src="home.svg"  alt=""/>
-            <span className="listTitle">Homepage</span>
-          </Link>
-          <Link to="/">
-            <img src="profile.svg"  alt=""/>
-            <span className="listTitle">Profile</span>
-          </Link>
-        </div>
+
+        )}
 
       </div>
     </>
