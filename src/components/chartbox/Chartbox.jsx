@@ -12,16 +12,16 @@ const Chartbox = (props) => {
           <span>{props.title}</span>
         </div>
         <h1>{props.numbers}</h1>
-        <Link to="/">View All</Link>
+        <Link to="/" style={{color: props.color}}>View All</Link>
       </div>
       <div className="chartinfo">
         <div className="chart">
-          <ResponsiveContainer width="100%" height="100%">
-            <LineChart width={300} height={100} data={props.chartdata}>
+          <ResponsiveContainer width="99%" height="99%">
+            <LineChart width={300} height={100} data={props.chartData}>
               <Tooltip 
                 contentStyle={{background: "transparent", border: "none"}}
                 labelStyle={{display : "none"}}
-                position={{x : 10 , y : 70 }}
+                position={{x: 10 , y: 65 }}
               />
               <Line type="monotone"
                 dataKey={props.dataKey}
@@ -33,7 +33,7 @@ const Chartbox = (props) => {
           </ResponsiveContainer>
         </div>
         <div className="texts">
-          <div className="percentage">{props.percentage}%</div>
+          <div className="percentage" style={{color : props.percentage < 0 ? "tomato" : "limegreen"}}>{props.percentage}%</div>
           <div className="duration">this month</div>
         </div>
       </div>
