@@ -1,3 +1,17 @@
 .users{
-  color: hotpink;
+  
+
+  .info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+
+    button{
+      width: 100px;
+      height: 35px;  
+      border-radius: 10px;
+    }
+  }
 }
