@@ -35,7 +35,7 @@ const rows = [
   { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
 ];
 
-const paginationModel = { page: 0, pageSize: 5 };
+const paginationModel = { page: 0, pageSize: 10 };
 
 
 const Users = () => {
@@ -47,7 +47,7 @@ const Users = () => {
           <button>Add</button>
         </div>
         <div className="table">
-          <Paper sx={{ height: 400, width: '100%' }}>
+          <Paper sx={{ height: "100%", width: '100%' }}>
             <DataGrid
               rows={rows}
               columns={columns}
