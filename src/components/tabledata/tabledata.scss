@@ -1,3 +1,26 @@
+@import "../../styles/variables.scss"; 
+
+
 .tabledata{
-  color: hotpink;
+  
+
+
+  .grid{
+
+
+    color: white;
+    background-color: $soft-bg;
+
+    .MuiDataGrid-topContainer{
+      
+      color: black;
+
+      .MuiDataGrid-columnHeaders{
+        
+
+        background-color: black;
+      }
+    }
+    
+  }
 }

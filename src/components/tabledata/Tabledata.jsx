@@ -45,6 +45,7 @@ const Tabledata = () => {
     <div className="tabledata">
       <Paper sx={{ height: "100%", width: '100%' }}>
         <DataGrid
+          className="grid"
           rows={rows}
           columns={columns}
           initialState={{ pagination: { paginationModel } }}
