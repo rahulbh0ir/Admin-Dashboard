@@ -1,26 +1,22 @@
-@import "../../styles/variables.scss"; 
-
 
 .tabledata{
   
 
 
   .grid{
-
-
-    color: white;
-    background-color: $soft-bg;
-
-    .MuiDataGrid-topContainer{
-      
-      color: black;
-
-      .MuiDataGrid-columnHeaders{
-        
-
-        background-color: black;
-      }
-    }
+    padding: 20px;
     
+
+    .MuiDataGrid-toolbarContainer{
+      flex-direction: row-reverse;
+    }
+
+    img{
+      margin-top: 8px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
   }
 }
