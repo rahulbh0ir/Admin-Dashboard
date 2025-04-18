@@ -24,17 +24,20 @@ const columns = [
     field: 'firstName',
     headerName: 'First name',
     width: 150,
+    type: "string",
     editable: true,
   },
   {
     field: 'lastName',
     headerName: 'Last name',
     width: 150,
+    type: "string",
     editable: true,
   },
   {
     field: 'email',
     headerName: 'Email',
+    type: "string",
     width: 250,
     editable: true,
   },
@@ -42,19 +45,21 @@ const columns = [
     field: 'phone',
     headerName: 'Phone Number',
     width: 150,
+    type: "string",
     editable: true,
   },
   {
     field: 'createdAt',
     headerName: 'Created At',
     width: 150,
+    type: "string",
     editable: true,
   },
   {
     field: 'verified',
     headerName: 'Verified',
-    type: "boolean",
     width: 150,
+    type: "boolean",
     editable: true,
   },
 
@@ -77,7 +82,7 @@ const Users = () => {
           <Tabledata slug={"users"} columns={columns} rows={userRows} />
         </div>
       </div>
-      {open ? <Add columns = {columns} setOpen = {setOpen} /> : null}
+      {open && <Add slug= {"users"} columns= {columns} setOpen= {setOpen} />}
     </>
   )
 }
