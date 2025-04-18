@@ -1,6 +1,8 @@
 import Tabledata from "../../components/tabledata/Tabledata";
 import "./users.scss"
 import { userRows } from "./../../data"
+import { useState } from "react";
+import Add from "../../components/add/Add";
 
 const columns = [
   {
@@ -61,18 +63,21 @@ const columns = [
 
 
 const Users = () => {
+  
+  const [open, setOpen] = useState(false)
+  
   return (
     <>
       <div className="users">
         <div className="info">
           <h1>Add New Users</h1>
-          <button>Add</button>
+          <button onClick={() => setOpen(true)}>Add</button>
         </div>
         <div className="table">
-          <Tabledata columns={columns} rows={userRows} />
+          <Tabledata slug={"users"} columns={columns} rows={userRows} />
         </div>
       </div>
-
+      {open ? <Add columns = {columns} setOpen = {setOpen} /> : null}
     </>
   )
 }
