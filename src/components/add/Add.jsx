@@ -2,7 +2,8 @@ import "./add.scss"
 
 const Add = (props) => {
 
-  const handleSumit = () => {
+  const handleSumit = (e) => {
+    e.preventDefault();
     console.log("Submit")
   }
 
@@ -12,15 +13,17 @@ const Add = (props) => {
         <span onClick={() => props.setOpen(false)} style={{ cursor: "pointer" }}>X</span>
         <h1>Add new {props.slug}</h1>
         <form onSubmit={handleSumit}>
-          {props.columns.map((item) => (
+          {props.columns.filter(item => item.field !== "id" && item.field !== "avatar").map((item) =>
+          (
             <div className="item">
               <label>{item.headerName}</label>
-              <input></input>
-
+              <input placeholder={item.headerName}></input>
             </div>
-          ))}
+          )
+          )}
+          <button>Send</button>
         </form>
-        
+
       </div>
     </div>
   )
