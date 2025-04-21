@@ -75,7 +75,7 @@ const Users = () => {
     <>
       <div className="users">
         <div className="info">
-          <h1>Add New Users</h1>
+          <h1>All Users</h1>
           <button onClick={() => setOpen(true)}>Add</button>
         </div>
         <div className="table">
