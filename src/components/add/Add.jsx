@@ -5,6 +5,7 @@ const Add = (props) => {
   const handleSumit = (e) => {
     e.preventDefault();
     console.log("Submit")
+    props.setOpen(false)
   }
 
   return (
@@ -21,7 +22,7 @@ const Add = (props) => {
             </div>
           )
           )}
-          <button>Send</button>
+          <button onClick={handleSumit}>Send</button>
         </form>
 
       </div>

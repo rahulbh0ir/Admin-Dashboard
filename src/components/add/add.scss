@@ -39,9 +39,39 @@
 
     form{
 
-      .item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 500px;
+      flex-wrap: wrap;
+      justify-content: space-between;
 
+      .item{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
         padding: 5px;
+
+
+        label{
+          font-size: 14px;
+        }
+
+        input{
+          padding: 10px;
+          background-color: transparent;
+          color: white;
+          outline: none;
+          border: 1px solid $soft-color;
+        }
+      }
+
+      button{
+        cursor: pointer;
+        margin: auto;
+        width: 60%;
+        padding: 10px;
       }
     }
 
