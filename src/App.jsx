@@ -1,14 +1,14 @@
 import Home from "./pages/home/Home";
 import Products from "./pages/products/Products";
 import Users from "./pages/users/Users";
+import User from "./pages/singleUser/User";
+import Product from "./pages/singleProduct/Product";
 import Navbar from "./components/navbar/Nabvar";
 import Footer from "./components/footer/Footer";
 import Sidebar from "./components/sidebar/Sidebar";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./styles/global.scss";
 import "./styles/variables.scss";
-import User from "./pages/singleUser/User";
-import Product from "./pages/singleProduct/Product"
 
 
 function App() {
