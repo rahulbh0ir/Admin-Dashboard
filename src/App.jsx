@@ -7,6 +7,8 @@ import Sidebar from "./components/sidebar/Sidebar";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./styles/global.scss";
 import "./styles/variables.scss";
+import User from "./pages/singleUser/User";
+import Product from "./pages/singleProduct/Product"
 
 
 function App() {
@@ -51,6 +53,14 @@ function App() {
         {
           path:"/products",
           element: <Products />
+        },
+        {
+          path:"/users/:id",
+          element: <User />
+        },
+        {
+          path:"/products/:id",
+          element: <Product />
         }
       ]
     }
