@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./sidebar.scss";
-import {menu} from "../../data.js"
+import { menu } from "../../data.js"
 
 const Sidebar = () => {
   return (

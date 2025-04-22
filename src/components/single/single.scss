@@ -7,6 +7,17 @@
     flex: 1;
 
     .info{
+
+      button{
+        margin-top: 30px;
+        background-color: tomato;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        width: 100px;
+        height: 40px;
+        cursor: pointer;
+      }
       
       .topInfo{
 
@@ -67,6 +78,56 @@
   .activities{
 
     flex: 1;
+
+    h2{
+      margin-bottom: 20px;
+    }
+
+    ul{
+
+      li{
+
+        position: relative;
+        list-style-type: none;
+        width: 1px;
+        background-color: limegreen;
+        padding-top: 50px;
+
+
+
+        &::after{
+
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: hsl(80, 61%, 50%);
+          transform: translateX(-50%);
+          // transform: translateY(-100%);
+        }
+
+        div{
+          min-width: 500px;
+          padding: 15px;
+          background-color: #9acd3210 ;
+
+          p{
+
+            margin-bottom: 10px;
+          }
+
+
+          time{
+
+            font-size: 12px;
+          }
+        }
+
+      }
+    }
   }
 
 }
