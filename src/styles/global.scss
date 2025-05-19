@@ -21,28 +21,6 @@ a {
 
 .container{
   display: flex;
-
-  @include xxl{
-    background-color: rgba(214, 16, 16, 0.196);
-  }  
-
-  @include xl{
-    background-color: rgba(34, 185, 102, 0.267);
-  }
-
-  @include lg{
-    background-color: rgba(205, 50, 143, 0.385);
-  }
-
-  @include md{
-    background-color: rgba(0, 255, 255, 0.404);
-  }
-
-  @include sm{
-    background-color: rgba(255, 99, 71, 0.404);
-  }
-
-
 }
 
 .side{
