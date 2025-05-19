@@ -11,7 +11,7 @@ const Chartbox = (props) => {
           <img src={props.icon} />
           <span>{props.title}</span>
         </div>
-        <h1>{props.numbers}</h1>
+        <h1>{props.number}</h1>
         <Link to="/" style={{color: props.color}}>View All</Link>
       </div>
       <div className="chartinfo">
